@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">match simulator app</string>
+    <string name="cd_simulate">Botão de sorteio</string>
+    <string name="txt_versus">X</string>
+    <string name="cd_home_team">mandante</string>
+    <string name="error_api">Unexpected error</string>
+</resources>
