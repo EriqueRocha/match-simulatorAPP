@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private MatchesAPI matchesApi;
-    private MatchesAdapter matchesAdapter = new MatchesAdapter(Collections.emptyList());
+    private MatchesAdapter matchesAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupHttpClient() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://digitalinnovationone.github.io/matches-simulator-api/")
+                .baseUrl("https://eriquerocha.github.io/simulator-api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         matchesApi = retrofit.create(MatchesAPI.class);
@@ -105,6 +105,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }
