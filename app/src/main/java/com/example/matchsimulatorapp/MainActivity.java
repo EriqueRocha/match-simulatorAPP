@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
+            //throw  new RuntimeException("teste crashlytics"); comando usaso para firçar um bug e testar o crashlytics
         });
     }
 
